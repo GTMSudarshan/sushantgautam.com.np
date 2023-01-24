@@ -1,0 +1,11 @@
+.main-home{
+    grid-column: 2 / 3;
+    margin-left: 12px;
+ }
+.About-heading{
+    color:#173b6c;
+}
+.About-heading:active{
+text-decoration: underline;
+
+}
