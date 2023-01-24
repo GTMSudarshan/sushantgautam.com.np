@@ -1,10 +1,9 @@
 import React from 'react'
-import  { useEffect, useState, useRef } from "react";
 import './Home.css'
-import background from'../background.jpg'
+// import background from'../background.jpg'
 const Home = () => {
     return (
-        <div className='main-home'>
+        <div className='main-home' id='Home'>
     {/* <div className="container">
       <div className="section-1">
         <img src={background} alt="image" className='background-image' />
@@ -21,3 +20,4 @@ const Home = () => {
     }
     
     export default Home
+    

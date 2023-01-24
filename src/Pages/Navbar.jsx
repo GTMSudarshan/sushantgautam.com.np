@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaHome, FaUser, FaFileAlt, FaTools, FaBrain } from 'react-icons/fa';
 import './Navbar.css';
 import profile from '../profile.jpg';
-
 function Navbar() {
   const [year] = useState(new Date().getFullYear());
+  
   return (
     <div className='mainnavdiv'>
     <header className="header">
@@ -27,27 +27,27 @@ function Navbar() {
       <nav className="navbar">
         <ul className="navbar-list">
           <li className="navbar-item">
-            <a href="#">
-              <FaHome className="navbar-icon" /> Home
+          <a href="#">
+            <FaHome className="navbar-icon" /> Home
             </a>
           </li>
           <li className="navbar-item">
-            <a href="#">
-              <FaUser className="navbar-icon" /> About
+          <a href="#">           
+          <FaUser className="navbar-icon" /> About
             </a>
           </li>
           <li className="navbar-item">
-            <a href="#">
+          <a href="#">
               <FaFileAlt className="navbar-icon" /> Resume
             </a>
           </li>
           <li className="navbar-item">
-            <a href="#">
+          <a href="#">
               <FaTools className="navbar-icon" /> Services
             </a>
           </li>
           <li className="navbar-item">
-            <a href="#">
+          <a href="#">
               <FaBrain className="navbar-icon" /> Skills
             </a>
           </li>
@@ -58,7 +58,7 @@ function Navbar() {
       <footer className="footer">
       <div className="footer-content">
         <p>Copyright ©{year}</p>
-        <h7>Personal Portfolio</h7>
+        <h6>Personal Portfolio</h6>
       </div>
     </footer>
       </div>
