@@ -1,10 +1,14 @@
+html, body {
+	height: 100vh; /* needed to be able to use 100% height in the columns */
+}
+
 .header {
     top: 0;
     left: 0;
     padding: 10px 15px;
     background-color: rgb(0, 0, 0);
-    z-index: 2;
     flex-wrap: wrap;
+    z-index: 2;
     transition: all 0.5s;
     transition-property: all;
     transition-duration: 0.5s;
@@ -28,9 +32,22 @@
     margin-top: 20px;
  } 
   a {
-    text-decoration: none;
     color: rgba(255, 255, 255, 0.805);
  }
+ .navbar-item > a {
+  color: rgb(65, 63, 63);
+}
+
+.navbar-item > a:hover, .navbar-item > a.active {
+  color: rgb(79, 84, 227);
+  font-weight: bold;
+}
+.navbar-item > a:hover, .navbar-item > a:active {
+  position: relative;
+  z-index: 2;
+  transition: all 0.7s ease;
+}
+
  h1{
     font-size: 31px;
  }
@@ -61,7 +78,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 1.52vh;
   }
   
   .nav-button {
@@ -84,7 +101,7 @@
   }
   
   .navbar-item {
-    padding: 13px;
+    padding: 1.5vh;
   }
 
  .navbardiv{
@@ -103,19 +120,19 @@
 .footer-content {
     padding: 8px;
 }
-.App{
-  display: grid;
-  grid-template-columns: 20% 80%; /* first column for navbar and second column for main content */
-  grid-column-gap: 2.4377743% /* small gap between columns */
+/* .header{
+    display: flex;
+  flex-direction: column;   
+  flex-basis: 46.5879vh;
+}   */
+/* .main-home>.HomeContainer{
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  flex-direction: initial;
+} */
+.header .main-home{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-
-.mainnavdiv{
-  grid-column: 1 / 3; /* navbar should be in the first column */
-  position: fixed; /* navbar should be fixed to the left */
-  overflow-y: auto; /* enable scrollbar for navbar */
-  background-color: rgb(181, 37, 37); /* set background color for navbar */
-}
-
-
-
-      

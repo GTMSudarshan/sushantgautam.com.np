@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaHome, FaUser, FaFileAlt, FaTools, FaBrain } from 'react-icons/fa';
+import { Link, animateScroll as scroll } from "react-scroll";
 import './Navbar.css';
 import profile from '../profile.jpg';
 function Navbar() {
@@ -10,7 +11,15 @@ function Navbar() {
     <header className="header">
      <div className='main-div'>
       <img src={profile} alt="profile" className="profile-picture" />
-      <h1 className='heading'>Sudarshan Gautam</h1>
+      <h1 className='heading'><Link
+                  activeClass="active"
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={490}
+                  onClick={() => scroll.scrollToTop()}>
+                    Sudarshan Gautam</Link></h1>
       <div className="social-icons">
         <a href="https://facebook.com" className="social-icon">
           <FaFacebook />
@@ -27,33 +36,68 @@ function Navbar() {
       <nav className="navbar">
         <ul className="navbar-list">
           <li className="navbar-item">
-          <a href="#">
-            <FaHome className="navbar-icon" /> Home
-            </a>
+            <Link
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={490}
+              >
+              <FaHome className="navbar-icon" /> Home
+            </Link>
           </li>
           <li className="navbar-item">
-          <a href="#">           
-          <FaUser className="navbar-icon" /> About
-            </a>
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={490}
+            >
+              <FaUser className="navbar-icon" /> About
+            </Link>
           </li>
           <li className="navbar-item">
-          <a href="#">
+            <Link
+              activeClass="active"
+              to="resume"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={490}
+            >
               <FaFileAlt className="navbar-icon" /> Resume
-            </a>
+            </Link>
           </li>
           <li className="navbar-item">
-          <a href="#">
+            <Link
+              activeClass="active"
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={490}
+            >
               <FaTools className="navbar-icon" /> Services
-            </a>
+            </Link>
           </li>
           <li className="navbar-item">
-          <a href="#">
+            <Link
+              activeClass="active"
+              to="skills"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={490}
+            >
               <FaBrain className="navbar-icon" /> Skills
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
-      </div>
+    </div>
       <div className='footerdiv'>
       <footer className="footer">
       <div className="footer-content">

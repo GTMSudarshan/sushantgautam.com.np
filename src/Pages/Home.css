@@ -1,11 +1,21 @@
-.main-home{
-    grid-column: 2 / 3;
-    margin-left: 12px;
- }
+
 .About-heading{
     color:#173b6c;
 }
 .About-heading:active{
 text-decoration: underline;
+}
+.sudarshan{
+    color: #173b6c;
+    position: absolute;
+    top:44%;
+    width: 100%;
+    text-align: center;
 
 }
+.section-1{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+.section-1 img{width: 100%;}
