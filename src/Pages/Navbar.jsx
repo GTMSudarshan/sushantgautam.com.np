@@ -19,10 +19,6 @@ function Navbar() {
      <img src={profile} alt="profile" className="profile-picture" id='myimageid' ref={imgRef}/>      <h1 className='heading'><Link
                   activeClass="active"
                   to="home"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={490}
                   onClick={() => scroll.scrollToTop()}>
                     Sudarshan Gautam</Link></h1>
       <div className="social-icons">
@@ -46,7 +42,7 @@ function Navbar() {
               to="home"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={0}
               duration={490}
               >
               <FaHome className="navbar-icon" /> Home
@@ -58,7 +54,7 @@ function Navbar() {
               to="about"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={0}
               duration={490}
             >
               <FaUser className="navbar-icon" /> About
@@ -70,7 +66,7 @@ function Navbar() {
               to="resume"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={0}
               duration={490}
             >
               <FaFileAlt className="navbar-icon" /> Resume
@@ -82,7 +78,7 @@ function Navbar() {
               to="services"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={0}
               duration={490}
             >
               <FaTools className="navbar-icon" /> Services
@@ -94,7 +90,7 @@ function Navbar() {
               to="skills"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={0}
               duration={490}
             >
               <FaBrain className="navbar-icon" /> Skills
