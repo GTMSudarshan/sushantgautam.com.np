@@ -28,6 +28,9 @@ html, body {
 
 
   }
+  .heading:hover{
+    cursor: pointer;
+  }
  .main-div{
     margin-top: 20px;
  } 
@@ -35,17 +38,19 @@ html, body {
     color: rgba(255, 255, 255, 0.805);
  }
  .navbar-item > a {
-  color: rgb(65, 63, 63);
+  color: rgba(145, 139, 139, 0.779);
+  font-size: 31;
 }
 
 .navbar-item > a:hover, .navbar-item > a.active {
-  color: rgb(79, 84, 227);
-  font-weight: bold;
+  color:#149dddf1;
+  /* font-weight: bold; */
+  cursor: pointer;
 }
 .navbar-item > a:hover, .navbar-item > a:active {
   position: relative;
   z-index: 2;
-  transition: all 0.7s ease;
+  transition: all 0.4s ease;
 }
 
  h1{
@@ -59,7 +64,7 @@ html, body {
     margin: 15px auto ;
     border: 8px solid #2c2f3f;
     max-width: 100%;
-
+    transition: all 0.3s ease-in-out;
   }
 
   
@@ -79,6 +84,12 @@ html, body {
     align-items: center;
     justify-content: center;
     margin-top: 1.52vh;
+  }
+  .social-icons>.social-icon:hover{
+    /* font-size: 35px; */
+    color: #abc2da;
+    transition: 0.4s ease-in-out;
+
   }
   
   .nav-button {
@@ -118,7 +129,7 @@ html, body {
 }
 
 .footer-content {
-    padding: 8px;
+    padding: 6px;
 }
 /* .header{
     display: flex;

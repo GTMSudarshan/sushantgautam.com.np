@@ -1,13 +1,13 @@
 import React from 'react'
 import './Home.css'
-import background from'../background.png'
+import backgroundimg from'../background.png'
 const Home = () => {
     return (
         <main className='main-home'>
       <div className='HomeContainer'>
     <div className="container" id='home'>
       <div className="section-1">
-        <img src={background} alt="image" className='background-image' />
+        <img src={backgroundimg} alt="images" className='background-image' />
         <h1 className='sudarshan'><span>I am Sudarshan</span></h1>
       </div>
       </div>

@@ -1,17 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect} from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaHome, FaUser, FaFileAlt, FaTools, FaBrain } from 'react-icons/fa';
 import { Link, animateScroll as scroll } from "react-scroll";
 import './Navbar.css';
 import profile from '../profile.jpg';
 function Navbar() {
   const [year] = useState(new Date().getFullYear());
-  
+  const imgRef = useRef(null);
+
+  useEffect(() => {
+    imgRef.current.addEventListener("mouseover", function() {
+        this.style.transform = "translate(" + (Math.random()*8-1) + "px, " + (Math.random()*8-1) + "px)";
+    });
+  }, []);
   return (
     <div className='mainnavdiv'>
     <header className="header">
      <div className='main-div'>
-      <img src={profile} alt="profile" className="profile-picture" />
-      <h1 className='heading'><Link
+     <img src={profile} alt="profile" className="profile-picture" id='myimageid' ref={imgRef}/>      <h1 className='heading'><Link
                   activeClass="active"
                   to="home"
                   spy={true}
